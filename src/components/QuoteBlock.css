@@ -108,6 +108,17 @@
     color: var(--secondary-color);
 }
 
+@media screen and (max-width: 1050px) {
+    .quote-block .quote-block__heading {
+		font-size: 28px;
+	}
+
+    .quote-block .quote-block__left,
+    .quote-block .quote-block__right {
+        padding: 10px 15px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 	.quote-block {
 		flex-direction: column;
