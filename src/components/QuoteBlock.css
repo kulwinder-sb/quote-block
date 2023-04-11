@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+
+:root {
+	--primary-color: #0053b6;
+	--secondary-color: #c9b08d;
+}
+
+.quote-block {
+	padding: 10px 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	display: flex;
+	color: var(--primary-color);
+}
+
+.quote-block.theme--primary {
+	font-family: "Arimo", sans-serif;
+	color: var(--primary-color);
+}
+
+.quote-block.theme--secondary {
+	color: var(--secondary-color);
+}
+
+.quote-block .quote-block__left {
+	width: 30%;
+	padding: 10px 20px;
+}
+
+.quote-block .quote-block__right {
+	width: 70%;
+	padding: 10px 20px;
+}
+
+.quote-block .quote-block__heading {
+	font-size: 38px;
+	margin: 0 0 20px;
+}
+
+.quote-block .quote-block__sub-heading {
+	margin: 0 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.quote-block .quote-block__underline {
+	display: inline-block;
+	width: 100px;
+	height: 2px;
+}
+
+.quote-block.theme--primary .quote-block__underline {
+	background-color: var(--primary-color);
+}
+
+.quote-block.theme--secondary .quote-block__underline {
+	background-color: var(--secondary-color);
+}
+
+.quote-block .quote-block__description {
+	margin: 0 0 25px;
+	font-size: 15px;
+}
+
+.quote-block .quote-block__link {
+	color: inherit;
+	margin: 0 4px;
+}
+
+.quote-block .quote-block__btn {
+	display: inline-block;
+	padding: 8px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+.quote-block.theme--primary .quote-block__btn {
+	border: 1px solid var(--primary-color);
+}
+
+.quote-block.theme--secondary .quote-block__btn {
+	border: 1px solid var(--secondary-color);
+}
+
+.quote-block .quote-block__btn.btn---fill {
+	color: #fff;
+}
+
+.quote-block.theme--primary .quote-block__btn.btn---fill {
+    background: var(--primary-color);
+}
+
+.quote-block.theme--secondary .quote-block__btn.btn---fill {
+    background: var(--secondary-color);
+}
+
+.quote-block .quote-block__btn.btn---outline {
+	background: transparent;
+}
+
+.quote-block.theme--primary .quote-block__btn.btn---outline {
+    color: var(--primary-color);
+}
+
+.quote-block.theme--secondary .quote-block__btn.btn---outline {
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+	.quote-block {
+		flex-direction: column;
+	}
+
+	.quote-block .quote-block__left,
+	.quote-block .quote-block__right {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+
+	.quote-block .quote-block__heading {
+		font-size: 30px;
+		margin: 0 0 15px;
+	}
+
+	.quote-block .quote-block__sub-heading {
+		margin: 0 0 15px;
+		font-size: 12px;
+	}
+
+	.quote-block .quote-block__description {
+		margin: 0 0 15px;
+		font-size: 13px;
+	}
+
+    .quote-block .quote-block__btn {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+}
