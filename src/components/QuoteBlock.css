@@ -32,7 +32,9 @@
 }
 
 .quote-block .quote-block__heading {
-	font-size: 38px;
+	font-size: 34px;
+    text-transform: uppercase;
+    font-weight: normal;
 	margin: 0 0 20px;
 }
 
@@ -89,11 +91,11 @@
 }
 
 .quote-block.theme--primary .quote-block__btn.btn---fill {
-    background: var(--primary-color);
+	background: var(--primary-color);
 }
 
 .quote-block.theme--secondary .quote-block__btn.btn---fill {
-    background: var(--secondary-color);
+	background: var(--secondary-color);
 }
 
 .quote-block .quote-block__btn.btn---outline {
@@ -101,23 +103,35 @@
 }
 
 .quote-block.theme--primary .quote-block__btn.btn---outline {
-    color: var(--primary-color);
+	color: var(--primary-color);
 }
 
 .quote-block.theme--secondary .quote-block__btn.btn---outline {
-    color: var(--secondary-color);
+	color: var(--secondary-color);
 }
 
-@media screen and (max-width: 1050px) {
-    .quote-block .quote-block__heading {
-		font-size: 28px;
+@media screen and (max-width: 1200px) {
+	.quote-block .quote-block__heading {
+		font-size: 32px;
+	}
+
+	.quote-block .quote-block__left,
+	.quote-block .quote-block__right {
+		padding: 10px 15px;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.quote-block .quote-block__heading {
+		font-size: 24px;
 	}
 
     .quote-block .quote-block__left,
-    .quote-block .quote-block__right {
-        padding: 10px 15px;
-    }
+	.quote-block .quote-block__right {
+		padding: 10px;
+	}
 }
+
 
 @media screen and (max-width: 768px) {
 	.quote-block {
@@ -132,7 +146,6 @@
 	}
 
 	.quote-block .quote-block__heading {
-		font-size: 30px;
 		margin: 0 0 15px;
 	}
 
@@ -146,8 +159,8 @@
 		font-size: 13px;
 	}
 
-    .quote-block .quote-block__btn {
-        font-size: 11px;
-        padding: 8px 12px;
-    }
+	.quote-block .quote-block__btn {
+		font-size: 11px;
+		padding: 8px 12px;
+	}
 }
